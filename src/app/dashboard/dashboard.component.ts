@@ -6,7 +6,8 @@ import {
   CognitoUserSession,
   ICognitoUserPoolData,
 } from 'amazon-cognito-identity-js';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
+
 
 @Component({
   selector: 'app-dashboard',
