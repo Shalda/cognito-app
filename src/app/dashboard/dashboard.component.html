@@ -1,0 +1,8 @@
+<h1>This is the protected dashboard</h1>
+
+
+<p>ID_TOKEN:{{info.getIdToken()["jwtToken"] | json}}</p>
+<p>ACCESS_TOKEN:{{info.getAccessToken()["jwtToken"] | json}}</p>
+<p>REFRESH_TOKEN:{{info.getRefreshToken()["token"] | json}}</p>
+
+<button (click)="onLogout()">Log out</button>

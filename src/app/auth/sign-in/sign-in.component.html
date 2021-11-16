@@ -1,0 +1,17 @@
+<div class="signin_title">
+  <img src="../../../assets/bst.jpg" >
+  <h4>Please sign into your account</h4>
+</div>
+<form (submit)="onSignIn(signInForm)" #signInForm="ngForm">
+  <label for="email"><b>Email address</b></label>
+  <input id='email' name="email" ngModel type="text" #emailInput="ngModel" [(ngModel)]="email_address"  placeholder="Enter Username or Email" required>
+
+  <label for="password"><b>Password</b></label>
+  <input id='password' [(ngModel)]="password" ngModel type="password" minlength="8" #passwordInput="ngModel" required name="password" placeholder="Enter Password" >
+
+  <button type="submit">Login</button>
+</form>
+<div> <p>test credentials:</p>
+  <p>email: bswt.test@gmail.com or username: testuser</p>
+  <p>pass: 12345@Aa</p>
+</div>
